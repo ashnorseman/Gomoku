@@ -1,0 +1,31 @@
+{
+  "name": "Gomoku",
+  "version": "0.0.1",
+  "authors": [
+    "Ash Norseman"
+  ],
+  "description": "A Javascript Gomoku game",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "javascript",
+    "game",
+    "gomoku"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ashnorseman/Gomoku",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2",
+    "modernizr": "~2.8.3"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/base.min.css">
+<!-- build:js js/modernizr.min.js -->
+<script src="../bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<title>Gomoku</title>
+
+<div class="gmk-main">
+  <div class="gmk-board" id="gmk-board"></div>
+
+  <div class="gmk-player player-1">
+    <div class="gmk-avatar">
+      <img src="images/player-ava-black.png" alt="李大妞">
+    </div>
+
+    <div class="gmk-player-name">
+      <img src="images/player-name-black.png" alt="李大妞">
+    </div>
+
+    <div class="gmk-now black active"></div>
+
+    <div class="gmk-timer">
+      <span class="gmk-timer-0"></span>
+      <span class="gmk-timer-1"></span>
+      <span class="gmk-timer-col"></span>
+      <span class="gmk-timer-2"></span>
+      <span class="gmk-timer-3"></span>
+    </div>
+  </div>
+
+  <div class="gmk-player player-2">
+    <div class="gmk-avatar">
+      <img src="images/player-ava-white.png" alt="钟小宝">
+    </div>
+
+    <div class="gmk-player-name">
+      <img src="images/player-name-white.png" alt="钟小宝">
+    </div>
+
+    <div class="gmk-now white"></div>
+
+    <div class="gmk-timer">
+      <span class="gmk-timer-4"></span>
+      <span class="gmk-timer-5"></span>
+      <span class="gmk-timer-col"></span>
+      <span class="gmk-timer-6"></span>
+      <span class="gmk-timer-7"></span>
+    </div>
+  </div>
+
+  <div class="gmk-btns">
+    <a class="gmk-start"></a>
+    <a class="gmk-restart"></a>
+  </div>
+
+  <div class="gmk-result">
+    <span class="gmk-result-black-win"></span>
+  </div>
+</div>
+
+<!-- build:js js/global.min.js -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/backbone/backbone.js"></script>
+<script src="js/cross.js"></script>
+<script src="js/board.js"></script>
+<script src="js/game.js"></script>
+<!-- endbuild -->
