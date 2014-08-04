@@ -100,7 +100,7 @@ Gomoku.CrossView = Backbone.View.extend({
     var board = this.model.board,
         game = board.game;
 
-    if (game) {
+    if (game && game.started) {
 
       if (this.model.isOccupied()) {
         throw 'The cross is already occupied.';
@@ -109,12 +109,12 @@ Gomoku.CrossView = Backbone.View.extend({
       board.clearActive();
 
       this.model.set({
-        stone: game.currentPlayer,
+        stone: game.currentPlayer.get('stone'),
         sequence: game.currentSequence,
         active: true
       });
 
-      game.switchPlayer();
+      game.nextMove();
     }
   }
 });

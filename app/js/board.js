@@ -22,6 +22,13 @@ Gomoku.BoardCollection = Backbone.Collection.extend({
     return this.at(y * Gomoku.BOARD_SIZE + x);
   },
 
+  refresh: function () {
+
+    _.each(this.models, function (model) {
+      model.reset();
+    });
+  },
+
   clearActive: function () {
 
     _.each(this.models, function (model) {
